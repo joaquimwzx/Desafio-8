@@ -104,15 +104,15 @@ public class Desafio8 {
         n2 = ler.nextDouble();
         System.out.println("Digite a terceiro nota");
         n3 = ler.nextDouble();
-        calcularMedia(n1, n2, n3);
+        System.out.println("Sua media e de:" + calcularMedia(n1, n2, n3));
     }
 
     public static double calcularMedia(double nota1, double nota2, double nota3) {
         double media = (nota1 + nota2 + nota3) / 3;
-        System.out.println("Sua media e de:" + media);
         return media;
     }
 }
+    
 ```
 # Questao 5
 ```java
