@@ -86,3 +86,33 @@ public class Desafio8 {
     }
 }
 ```
+# Questao 4
+```java
+package desafio8;
+
+import java.util.Scanner;
+
+public class Desafio8 {
+
+    public static void main(String[] args) {
+        double n1, n2, n3;
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite a primeira nota");
+        n1 = ler.nextDouble();
+        System.out.println("Digite a segunda nota");
+        n2 = ler.nextDouble();
+        System.out.println("Digite a terceiro nota");
+        n3 = ler.nextDouble();
+        calcularMedia(n1, n2, n3);
+    }
+
+    public static double calcularMedia(double nota1, double nota2, double nota3) {
+        double media = (nota1 + nota2 + nota3) / 3;
+        System.out.println("Sua media e de:" + media);
+        return media;
+    }
+}
+```
+# Questao 5
+```java
