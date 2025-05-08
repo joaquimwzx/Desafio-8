@@ -56,3 +56,33 @@ public class Desafio8 {
 }
 ```
 # Questao 3
+```java
+package desafio8;
+
+import java.util.Scanner;
+
+
+public class Desafio8 {
+
+    public static void main(String[] args) {
+
+        int n;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite um número:");
+        n = ler.nextInt();
+        somaLista(n);
+    }
+
+    public static void somaLista(int x) {
+        int i = 0;
+        int soma = 0;
+        while (i < x) {
+            i++;
+            soma += i;
+
+        }
+        System.out.println("A soma da lista de número é:" + soma);
+
+    }
+}
+```
