@@ -116,3 +116,77 @@ public class Desafio8 {
 ```
 # Questao 5
 ```java
+package desafio8;
+
+import java.util.Scanner;
+public class Desafio8 {
+
+    public static void main(String[] args) {
+
+        String palavra;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite uma palavra:");
+        palavra = ler.nextLine();
+        System.out.println("Original:" + palavra);
+        System.out.println("Inverso:" + inverterTexto(palavra));
+
+    }
+
+    public static String inverterTexto(String p) {
+        String inverte = " ";
+        for (int i = p.length() - 1; i >= 0; i--) {
+            inverte += p.charAt(i);
+        }
+        return inverte;
+    }
+}
+````
+# Questao 6
+```java
+package desafio8;
+
+import java.util.Scanner;
+public class Desafio8 {
+
+    public static void main(String[] args) {
+
+        double n;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite um numero:");
+        n = ler.nextDouble();
+        System.out.println("De metros para Km é:" + conversorKM(n) + "Km");
+
+    }
+
+    public static double conversorKM(double x) {
+        double calculo = x / 1000;
+        return calculo;
+    }
+}
+```
+# Questao 7
+```java
+package desafio8;
+
+import java.util.Scanner;
+
+
+public class Desafio8 {
+
+    public static void main(String[] args) {
+
+        double r;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite um numero:");
+        r = ler.nextDouble();
+        System.out.println("O volume da esfera é:" + (calcularVolume(r)) + "cm³");
+
+    }
+
+    public static double calcularVolume(double x) {
+        double calculo = (4.0 / 3.0) * Math.PI * (Math.pow(x, 3));
+        return calculo;
+    }
+}
+```
+
